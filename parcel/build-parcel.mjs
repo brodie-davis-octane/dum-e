@@ -6,7 +6,7 @@ export default {};
 console.log('creating parcel')
 
 let bundler = new Parcel({
-    entries: '../src/parcel.js',
+    entries: '../src/index.js',
     defaultConfig: '@parcel/config-default',
     env: {
         'docFee': 200,

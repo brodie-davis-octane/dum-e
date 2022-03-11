@@ -23,25 +23,25 @@ python3 -m  venv venv
 python -m pip install pika --upgrade
 ```
 
-## Usage
+## RPC Usage
 
 ### AMQ
 
-1. Start the consumer using `node dum-e-queue-poc.ts`
+1. Start the consumer using `node rpc/dum-e-queue-poc.ts`
 
 2. In another terminal, run on of the producers:
 
 ```bash
-python dum-e-queue-producer.py
+python rpc/dum-e-queue-producer.py
 ```
 
 ```bash
-node dum-e-queue-producer.ts
+node rpc/dum-e-queue-producer.ts
 ```
 
 ### REST
 
-1. Start the server using `node dum-e-rest-poc.ts`
+1. Start the server using `node rpc/dum-e-rest-poc.ts`
 2. Create a post request using curl / postman.
 
 ```
