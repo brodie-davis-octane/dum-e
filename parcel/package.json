@@ -1,0 +1,19 @@
+{
+  "name": "@octanelending/dum-e-parcel",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "parcel": "parcel src/parcel.js src/index.html",
+    "parcel-build": "parcel build src/parcel.js"
+  },
+  "dependencies": {
+    "@octanelending/parcel-runtime-dealer-configuration": "file:plugins",
+    "@parcel/config-default": "^2.3.2",
+    "@parcel/core": "^2.3.2",
+    "@parcel/plugin": "^2.3.2",
+    "@parcel/reporter-cli": "^2.3.2",
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.0.0"
+  }
+}
