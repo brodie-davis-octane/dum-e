@@ -15,28 +15,36 @@ Proof of Concept(s) for Widget file Generation
 npm install koa @koa/router amqplib
 ```
 
-3. Create a virtual environemnt and install the following python packages
+3. Create a virtual environment and install the required python packages
 
 ```bash
 python3 -m  venv venv
 . venv/bin/activate
-python -m pip install pika --upgrade
+pip install -U pip
+pip install -r requirements.txt
 ```
 
 ## RPC Usage
 
+Run all commands from the `rpc/` folder.
+
+#### Setup
+
+Run `npm i`
+
+
 ### AMQ
 
-1. Start the consumer using `node rpc/dum-e-queue-poc.ts`
+1. Start the consumer using `node dum-e-queue-poc.ts`
 
 2. In another terminal, run on of the producers:
 
 ```bash
-python rpc/dum-e-queue-producer.py
+python dum-e-queue-producer.py
 ```
 
 ```bash
-node rpc/dum-e-queue-producer.ts
+node dum-e-queue-producer.ts
 ```
 
 ### REST
