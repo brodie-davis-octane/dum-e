@@ -21,12 +21,6 @@ let defPlug = new webpack.DefinePlugin({
     WIDGET_CONFIGURATION: JSON.stringify(objectAssignDeep(olCtaWidget, overrides))
 });
 
-// Shared Webpack Configuration
-let webpackConfiguration = {
-    entry: '../src/index.js',
-    plugins: [defPlug]
-}
-
 function errHandler(err, stats) {
     if (err) {
         console.error(err.stack || err);

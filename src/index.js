@@ -1,12 +1,15 @@
-// publish the defaults as a package for two reasons:
-//   1. Allow autocompletion and static analysis of configuration fields
-//   2. Allow overriding the require statement during compilation with dealer overrides
-if(!CTA_BUILD) {
-    olCtaWidget = require('@octanelending/default-widget-configuration');
-} else {
+if(CTA_BUILD) {
+    // The string "WIDGET_CONFIGURATION" will be replaced with the
+    // dealer specific configuration at build time
     olCtaWidget = WIDGET_CONFIGURATION;
+} else {
+    // import default values for static analysis and auto-complete
+    // this block will be optimized out during a production build
+    olCtaWidget = require('@octanelending/default-widget-configuration');
 }
-window.olCtaWidget = olCtaWidget; // export for testing
+
+// export olCtaWidget to window for testing
+window.olCtaWidget = olCtaWidget;
 
 console.log(olCtaWidget)
 console.log(olCtaWidget.partnerIdentifier)
