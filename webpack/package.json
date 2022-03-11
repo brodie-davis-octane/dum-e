@@ -1,0 +1,12 @@
+{
+  "name": "@octanelending/dum-e-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "@octanelending/default-widget-configuration": "file:../src/default-configuration",
+    "object-assign-deep": "^0.4.0",
+    "webpack": "^5.70.0"
+  }
+}

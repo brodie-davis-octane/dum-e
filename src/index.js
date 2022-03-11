@@ -1,14 +1,17 @@
-import {olCtaWidget} from './defaults'
+// publish the defaults as a package for two reasons:
+//   1. Allow autocompletion and static analysis of configuration fields
+//   2. Allow overriding the require statement during compilation with dealer overrides
+if(!CTA_BUILD) {
+    olCtaWidget = require('@octanelending/default-widget-configuration');
+} else {
+    olCtaWidget = WIDGET_CONFIGURATION;
+}
+window.olCtaWidget = olCtaWidget; // export for testing
 
-const BUNDLER = 'parcel';
-
-console.log(`built with ${BUNDLER}!`)
 console.log(olCtaWidget)
 console.log(olCtaWidget.partnerIdentifier)
 console.log(olCtaWidget.dealership)
 console.log(olCtaWidget.docFee)
-// process variables
-console.log(process.env.docFee)
 
 // values to bundle:
 // olCtaWidget.partnerIdentifier = 'g4EAn12';
