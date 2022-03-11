@@ -12,8 +12,3 @@ console.log(olCtaWidget)
 console.log(olCtaWidget.partnerIdentifier)
 console.log(olCtaWidget.dealership)
 console.log(olCtaWidget.docFee)
-
-// values to bundle:
-// olCtaWidget.partnerIdentifier = 'g4EAn12';
-// olCtaWidget.dealership = 'g4EAn12';
-// olCtaWidget.docFee = 200;
