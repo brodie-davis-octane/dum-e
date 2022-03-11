@@ -5,7 +5,7 @@ if(CTA_BUILD) {
 } else {
     // import default values for static analysis and auto-complete
     // this block will be optimized out during a production build
-    olCtaWidget = require('@octanelending/default-widget-configuration');
+    olCtaWidget = require('defaults');
 }
 
 // export olCtaWidget to window for testing

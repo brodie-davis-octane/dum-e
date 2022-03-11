@@ -1,13 +1,13 @@
 const webpack = require('webpack');
 const path = require('path');
 const objectAssignDeep = require(`object-assign-deep`);
-const olCtaWidget = require('../src/default-configuration')
+const olCtaWidget = require('../src/defaults')
 
 // Overrides as they would come from the API server
 let overrides = {
     partnerIdentifier: 'r0gue21',
     dealership: null,
-    docFee: 300,
+    docFee: 100,
     urls: {
         apiBaseUrl: 'test-url'
     }

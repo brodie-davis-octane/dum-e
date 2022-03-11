@@ -1,8 +1,0 @@
-{
-  "name": "@octanelending/default-widget-configuration",
-  "version": "1.0.0",
-  "description": "Default Widget Configuration for Octane Lending CTA Widget",
-  "main": "index.js",
-  "private": true,
-  "author": "Octane Lending"
-}
