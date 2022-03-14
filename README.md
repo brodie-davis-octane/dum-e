@@ -4,26 +4,6 @@ Proof of Concept(s) for Widget file Generation
 
 ![](https://64.media.tumblr.com/47fba3be04dfbce78cff2f80107c2bb0/tumblr_n15xraItP41qglwp9o3_r1_250.gifv)
 
-## Setup
-
-1. This requires RabbitMQ to be running on your local system.
-   Starting the Ride Octane API will start RabbitMQ locally and publish it on port 5674.
-
-2. Install the following node packages:
-
-```bash
-npm install koa @koa/router amqplib
-```
-
-3. Create a virtual environment and install the required python packages
-
-```bash
-python3 -m  venv venv
-. venv/bin/activate
-pip install -U pip
-pip install -r requirements.txt
-```
-
 ## Web Bundler
 
 Run all commands from the root of the repository
@@ -56,12 +36,22 @@ Run all commands from the `rpc/` folder.
 
 #### Setup
 
-- Install node dependencies with `npm install`
-- Create a Python virtual Environment and install requirements file
+1. This requires RabbitMQ to be running on your local system.
+   Starting the Ride Octane API will start RabbitMQ locally and publish it on port 5674.
+
+2. Install the following node packages:
+
 ```bash
-python3 -m venv venv
+npm install koa @koa/router amqplib
+```
+
+3. Create a virtual environment and install the required python packages
+
+```bash
+python3 -m  venv venv
 . venv/bin/activate
-pip install -r requirements.txt 
+pip install -U pip
+pip install -r requirements.txt
 ```
 
 ### AMQ
