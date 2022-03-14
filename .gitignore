@@ -8,4 +8,8 @@ venv/
 .cache/
 .idea/
 
+# only keep TypeScript files
+webpack/*.js
+src/*.js
+
 .DS_Store

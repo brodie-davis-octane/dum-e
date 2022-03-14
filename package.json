@@ -1,0 +1,25 @@
+{
+  "name": "@octanelending/dum-e-webpack",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "",
+  "scripts": {
+    "start": "ts-node webpack/index.ts"
+  },
+  "main": "webpack/index.js",
+  "private": true,
+  "dependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@octanelending/default-widget-configuration": "file:src/default-configuration",
+    "babel-loader": "^8.2.3",
+    "object-assign-deep": "^0.4.0",
+    "ts-loader": "^9.2.8",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2",
+    "webpack": "^5.70.0"
+  },
+  "devDependencies": {
+    "@types/object-assign-deep": "^0.4.0"
+  }
+}

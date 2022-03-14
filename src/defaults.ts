@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     appTheme: '3a49337c5724d18079602a4ca5a91626', // This is a reference to the appTheme MD5 Hash in UX Server
     urls: {
         apiBaseUrl: 'http://localhost:8001',
@@ -34,5 +34,5 @@ module.exports = {
     termMonths: 84,
     ctaText: 'Get Prequalified',
     filterGroups: [],
-};
+}
 
