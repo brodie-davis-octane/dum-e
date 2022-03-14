@@ -4,11 +4,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "OLRuntime.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@parcel/plugin": "^2.3.2"
   }

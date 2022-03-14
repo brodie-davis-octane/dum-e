@@ -34,5 +34,7 @@ export default {
     termMonths: 84,
     ctaText: 'Get Prequalified',
     filterGroups: [],
+    partnerIdentifier: null,
+    dealership: null,
 }
 

@@ -4,21 +4,30 @@
   "type": "commonjs",
   "description": "",
   "scripts": {
-    "start": "ts-node webpack/index.ts"
+    "preparcel": "rm dist/index.js dist/index.min.js",
+    "prewebpack": "rm dist/index.js dist/index.min.js",
+
+    "parcel": "node parcel/build-parcel.mjs",
+    "webpack": "ts-node webpack/index.ts"
   },
-  "main": "webpack/index.js",
   "private": true,
   "dependencies": {
+    "parcel-bundler": "^1.12.5",
+    "@parcel/config-default": "^2.3.2",
+    "@parcel/core": "^2.3.2",
+    "@parcel/plugin": "^2.3.2",
+    "@parcel/reporter-cli": "^2.3.2",
+    "typescript": "^4.0.0",
+    "@octanelending/parcel-runtime-dealer-configuration": "file:parcel/plugins",
+
+    "webpack": "^5.70.0",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
-    "@octanelending/default-widget-configuration": "file:src/default-configuration",
     "babel-loader": "^8.2.3",
     "object-assign-deep": "^0.4.0",
-    "ts-loader": "^9.2.8",
-    "ts-node": "^10.7.0",
-    "typescript": "^4.6.2",
-    "webpack": "^5.70.0"
+    "ts-node": "^10.7.0"
   },
+  "browserslist": ["> 0.25%", "not dead"],
   "devDependencies": {
     "@types/object-assign-deep": "^0.4.0"
   }
