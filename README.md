@@ -38,6 +38,9 @@ Run all commands from the root of the repository
 - Load the file `dist/index.html` in a browser
   - Observe the console.log messages from both `index.js` and `index.min.js
   - Check for the files sources in the Sources tab of your browser's dev tools 
+- Try changing or adding a value in `webpack/index.ts#overrides`
+  - Any values defined here (even nested values like `urls.apiBaseUrl`) will be overridden in frontend
+- After changing a value, rebuilt the application and observe the changed value on `window.olCtaWidget`
 
 ### Parcel
 
