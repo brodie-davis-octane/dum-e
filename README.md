@@ -24,14 +24,42 @@ pip install -U pip
 pip install -r requirements.txt
 ```
 
-## RPC Usage
+## Web Bundler
+
+Run all commands from the root of the repository
+
+#### Setup
+
+- Install dependencies with `npm install`
+
+### Webpack
+
+- Run `npm run parcel` to generate a bundle
+- Load the file `dist/index.html` in a browser
+  - Observe the console.log messages from both `index.js` and `index.min.js
+  - Check for the files sources in the Sources tab of your browser's dev tools 
+
+### Parcel
+
+Parcel currently isn't working. Parcel and webpack use a shared src/ directory,
+and the changes for webpack broke the Parcel method. Parcel didn't seem like a great option,
+so Parcel functionality was never fixed.
+
+Still, a bundle can be produced with `npm run parcel`
+
+## Remote Processs Communication (RPC) Usage
 
 Run all commands from the `rpc/` folder.
 
 #### Setup
 
-Run `npm i`
-
+- Install node dependencies with `npm install`
+- Create a Python virtual Environment and install requirements file
+```bash
+python3 -m venv venv
+. venv/bin/activate
+pip install -r requirements.txt 
+```
 
 ### AMQ
 

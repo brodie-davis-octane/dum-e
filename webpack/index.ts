@@ -70,6 +70,7 @@ console.log('running dev build')
 webpack({
     ...baseConfiguration,
     mode: 'development',
+    devtool: 'source-map',
     output: {
         path: path.resolve(__dirname, '..', 'dist'),
         filename: 'index.js'

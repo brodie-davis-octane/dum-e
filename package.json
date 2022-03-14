@@ -4,8 +4,8 @@
   "type": "commonjs",
   "description": "",
   "scripts": {
-    "preparcel": "rm dist/index.js dist/index.min.js",
-    "prewebpack": "rm dist/index.js dist/index.min.js",
+    "preparcel": "rm dist/index.js dist/index.min.js || true",
+    "prewebpack": "rm dist/index.js dist/index.min.js || true",
 
     "parcel": "node parcel/build-parcel.mjs",
     "webpack": "ts-node webpack/index.ts"
